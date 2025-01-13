@@ -1,0 +1,8 @@
+scrape_configs:
+  - job_name: 'MyUpdAppMetrics'
+    metrics_path: '/custom/metrics'
+    scrape_interval: 5s
+    static_configs:
+      - targets: ['myapp.local:9090']
+        labels:
+          application: 'My Updated Spring Boot App'
