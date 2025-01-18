@@ -18,7 +18,7 @@ services:
     volumes:
       - ./grafana/provisioning/datasources:/etc/grafana/provisioning/datasources
     networks:
-      - observability
+      - monitoring  # Correction : utilisation du même réseau que Prometheus
 
 networks:
   monitoring:
